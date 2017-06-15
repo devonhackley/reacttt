@@ -5,22 +5,22 @@ class Header extends Component {
     return (
     <header>
       <div className="logo">
-        YO!
+        <h1> GOODBYE JUNKFOOD <br>HELLO SUPER HEALTHY MEALS</h1>
       </div>
 
-      <nav>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Stuff</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-      </nav>
+      // <nav>
+      // <ul>
+      //   <li>
+      //     <a href="#" className="first">Home</a>
+      //   </li>
+      //   <li>
+      //     <a href="#">Stuff</a>
+      //   </li>
+      //   <li>
+      //     <a href="#" className="last">Contact</a>
+      //   </li>
+      // </ul>
+      // </nav>
     </header>
     );
   }
