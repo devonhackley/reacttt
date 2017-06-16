@@ -1,26 +1,15 @@
 import React, { Component } from 'react';
 
+import Navbar from '../navbar/navbar';
 class Header extends Component {
   render() {
     return (
     <header>
+      <Navbar />
       <div className="logo">
-        <h1> GOODBYE JUNKFOOD <br>HELLO SUPER HEALTHY MEALS</h1>
+      <h1> GOODBYE JUNK FOOD <br />HELLO SUPER HEALTHY MEALS</h1>
       </div>
 
-      // <nav>
-      // <ul>
-      //   <li>
-      //     <a href="#" className="first">Home</a>
-      //   </li>
-      //   <li>
-      //     <a href="#">Stuff</a>
-      //   </li>
-      //   <li>
-      //     <a href="#" className="last">Contact</a>
-      //   </li>
-      // </ul>
-      // </nav>
     </header>
     );
   }
