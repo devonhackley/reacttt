@@ -8,6 +8,7 @@ class Header extends Component {
       <Navbar />
       <div className="logo">
       <h1> GOODBYE JUNK FOOD <br />HELLO SUPER HEALTHY MEALS</h1>
+      <button type="button" className="btn btn-warning"><a href="#">Learn More</a></button>
       </div>
 
     </header>
