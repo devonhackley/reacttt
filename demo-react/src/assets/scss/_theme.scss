@@ -11,10 +11,10 @@ $s-pad: 0.5em;
 
 /* Mixins */
 
-@mixin translateY($e){
-  -webkit-transform: translateY($e);
-  -moz-transform: translateY($e);
-  transform: translateY($e);
+@mixin translate($e){
+  -webkit-transform: translate( $e);
+  -moz-transform: translate( $e);
+  transform: translate($e);
 }
 
 @mixin transition($e){
@@ -33,12 +33,30 @@ body {
   font-style: normal;
 }
 
+
 a {
   text-decoration: none;
   @include transition(.4s ease-in-out);
   cursor: pointer;
+
+  &:hover {
+    color:$lightGrey;
+    @include transition(.4s ease-in-out);
+    text-decoration: none;
+  }
 }
+ ul li {
+   display: inline-block;
+   list-style-type: none;
+ }
+
+
 
 .container-fluid {
   line-height: 3em;
+}
+
+.row {
+  max-width: 100%;
+  margin: 0 auto;
 }
