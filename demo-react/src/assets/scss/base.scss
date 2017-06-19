@@ -11,7 +11,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 85vh;
   width:100%;
 
   .logo {
@@ -88,5 +88,10 @@ header {
     margin-left: 15%;
     font-size: 1em;
     line-height: normal;
+  }
+  .content-arrange {
+    width: 70%;
+    line-height: normal;
+    margin-left: 50%;
   }
 }
