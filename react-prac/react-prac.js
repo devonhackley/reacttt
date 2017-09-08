@@ -1,8 +1,12 @@
 var Water = React.createClass({
     getInitialState: function() {
         return {
-            currentTemp: 55
+            currentTemp: 10
         };
+    },
+
+    setTemperature: function(e) {
+        this.setState({ currentTemp: e.target.value });
     },
 
     render: function() {
@@ -25,6 +29,7 @@ var Water = React.createClass({
 
         return (
         	<div>
+            	<input type="text" onChange={ this.setTemperature } value={ this.state.currentTemp } />
             	<p>At { this.state.currentTemp }°F, water is considered to be a "{ stateOfMatter }" state of matter.</p>
         	</div>
         );
