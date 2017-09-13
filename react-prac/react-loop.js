@@ -18,7 +18,7 @@ var Hello = React.createClass({
 var Hello = React.createClass({
   render: function(){
     var names = ['Joey', 'Josh', 'Jimmy'];
-    var namesList = names.map(name => {
+    var namesList = names.map(function(name) {
       return <li>{name}</li>
     })
 
