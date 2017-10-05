@@ -3,6 +3,7 @@
 const mongoose = require('mongoose');
 
 
+
 //Tweet data
 const schema =  mongoose.Schema({
     twid       : {type: String  }
@@ -32,4 +33,4 @@ schema.statics.getTweets = function(page, skip, callback){
   });
 };
 
-module.exports = Tweet = mongoose.model('Tweet', schema);
+module.exports =  mongoose.model('Tweet', schema);

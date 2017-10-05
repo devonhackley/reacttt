@@ -1,9 +1,9 @@
 'use strict';
 
-const JSX = require('node-jsx').install(),
-React = require('react'),
-TweetsApp = React.createFactory(require('./components/TweetsApp.react')),
-Tweet = require('./models/Tweet');
+const  JSX = require('node-jsx').install();
+const React = require('react');
+const TweetsApp = require('./components/TweetsApp.react');
+const Tweet = require('./models/Tweet.js');
 
 
 module.exports = {

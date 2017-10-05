@@ -4,9 +4,9 @@
 const express = require('express'),
       exphbs = require('express-handlebars'),
       mongoose = require('mongoose'),
-      twitter = require('ntwitter'),
+      twitter = require('twitter'),
       routes = require('./routes'),
-      config = require('./config'),
+      config = require('./config.js'),
       streamHandler = require('./utils/streamHandler');
 
 
@@ -20,7 +20,9 @@ app.set('view engine', 'handlebars');
 //Disables etag headers from the response
 app.disable('etag');
 
-mongoose.connect('mongod://localhost/react-tweets');
+mongoose.connect('mongodb://localhost/react-tweets',{
+  useMongoClient:true,
+});
 
 const twit = new twitter(config.twitter);
 

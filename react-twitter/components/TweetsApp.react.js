@@ -6,7 +6,7 @@ const Tweets = require('./Tweets.react.js');
 const Loader = require('./Loader.react.js');
 const NotificationBar = require('./NotificationBar.react.js');
 
-module.exports = TweetsApp = React.createClass({
+module.exports =  React.createClass({
 
   //Method that add a tweet to timeline
 
