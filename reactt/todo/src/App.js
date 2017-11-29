@@ -31,6 +31,8 @@ class App extends Component {
     this.state = {
       todos: todos
     };
+
+    this.handleAddTodo = this.handleAddTodo.bind(this);
   }
 
   handleRemoveTodo(index){
@@ -41,10 +43,16 @@ class App extends Component {
     })
   }
 
+  handleAddTodo(todo){
+    this.setState({
+      todos: [...this.state.todos,todo]
+    })
+  }
+
   render(){
     return(
       <div className="container">
-        <TodoInput />
+        <TodoInput onAddTodo={this.handleAddTodo}/>
         <h4>Todo count: <span className="badge">{ this.state.todos.length }</span></h4>
 
         <ul className="list-group">
