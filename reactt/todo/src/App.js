@@ -44,6 +44,7 @@ class App extends Component {
   render(){
     return(
       <div className="container">
+        <TodoInput />
         <h4>Todo count: <span className="badge">{ this.state.todos.length }</span></h4>
 
         <ul className="list-group">
